@@ -24,5 +24,28 @@ void ExibirMenu{
     while getchar( != 'n');
         if (opcao < 0 || opcao > 3):
           printf("Opcao invalida!\n");
+
+    switch (opcao) 
+    {
+    case 1:
+        consultarSaldo(saldo);
+        break;
+
+    case 2:
+        saldo = realizarSaque(saldo);
+        break;
+    
+    case 3:
+        realizarDeposito(float saldo);
+        break;
+    
+    case 0:
+        prinf("Saindo...\n");
+        break;
+        
+    default:
+        printf("Opcao Invalida!\n");
+        break;
+    }
     return 0;
 }
