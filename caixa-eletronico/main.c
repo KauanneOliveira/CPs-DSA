@@ -1,3 +1,7 @@
+#include<stdio.h>
+
+int main()
+{
 int opcao;
     do {
 system("cls");
@@ -20,4 +24,5 @@ void ExibirMenu{
     while getchar( != 'n');
         if (opcao < 0 || opcao > 3):
           printf("Opcao invalida!\n");
+    return 0;
 }
